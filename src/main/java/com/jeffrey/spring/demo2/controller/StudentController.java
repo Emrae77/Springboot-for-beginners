@@ -13,7 +13,7 @@ import java.util.List;
 public class StudentController {
     private StudentService studentService;
 
-    @PostMapping("/")
+    @PostMapping
     public Student save (@RequestBody Student student){
         return studentService.save(student);
     }
